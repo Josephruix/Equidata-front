@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
         profileDiv.classList.add("profile-info");
 
         const profileImg = document.createElement('img');
-        profileImg.src = "/images/Usuario.webp";
+        profileImg.src = "../images/Usuario.webp";
         profileImg.alt = "Profile Picture";
         profileImg.classList.add("rounded-image");
 
