@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
         errorElement.innerText = '';
 
         if (usuario.trim() === '' || Contrasena.trim() === '') {
-            errorElement.innerText = 'Por favor, complete todos los campos.';
+            errorElement.innerText = 'Por favor, complete los campos.';
             return;
         }
     
@@ -47,6 +47,7 @@ document.addEventListener("DOMContentLoaded", function() {
 function mostrarBotonesSegunRol(Rol) {
     const botonesEliminarSalas = document.querySelectorAll('.eliminar-Salas');
     const botonesEliminarEquipos = document.querySelectorAll('.eliminar-equipo');
+    
 
     if (Rol === 'admind') {
         botonesEliminarSalas.forEach(boton => {

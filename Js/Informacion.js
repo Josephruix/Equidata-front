@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const botonesEliminarSalas = document.querySelectorAll('.eliminar-Salas');
         const botonesEliminarEquipos = document.querySelectorAll('.eliminar-equipo');
         const botonesCambiarEstado= document.querySelectorAll(".editar-estado")
-        const botonagregarsalas=document.getElementById("Sala")
+        
 
         if (rolUsuario === 'admind') {
             botonesEliminarSalas.forEach(boton => {
@@ -33,9 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
             botonesCambiarEstado.forEach(boton=>{
                 boton.style.display="none";
             })
-            botonagregarsalas.forEach(boton=>{
-                boton.style.display="none";
-            })
+           
 
         }
     }
